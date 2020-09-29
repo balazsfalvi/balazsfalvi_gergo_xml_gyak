@@ -1,0 +1,11 @@
+<!DOCTYPE note
+        [
+                <!ELEMENT mozi (film)>
+                <!ELEMENT film (id,mufaj,rendezo,szinesz,iro)>
+                <!ELEMENT rendezo (id,name)>
+                <!ELEMENT szinesz (id,name)>
+                <!ELEMENT iro (id)>
+                <!ELEMENT id (#PCDATA)>
+                <!ELEMENT name (#PCDATA)>
+                <!ELEMENT mufaj (#PCDATA)>
+                ]>
