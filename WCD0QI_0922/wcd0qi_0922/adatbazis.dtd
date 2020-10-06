@@ -1,0 +1,7 @@
+<!DOCTYPE adatbazis [
+        <!ELEMENT adatbazis (DOLGOZO) >
+        <!ELEMENT DOLGOZO (kod, nev, fizetes)>
+        <!ELEMENT kod (#PCDATA) >
+        <!ELEMENT nev (#PCDATA) >
+        <!ELEMENT fizetes (#PCDATA) >
+        ]>

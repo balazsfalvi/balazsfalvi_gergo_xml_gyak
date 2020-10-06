@@ -1,0 +1,11 @@
+<!DOCTYPE iskola [
+        <!ELEMENT iskola (tanar+, diak+)>
+        <!ELEMENT tanar (nev, szak)>
+        <!ATTLIST tanar kod ID #REQUIRED>
+        <!ELEMENT diak (nev, osztaly)>
+        <!ATTLIST diak kod ID #REQUIRED>
+        <!ATTLIST diak konzulens IDREF #IMPLIED>
+        <!ELEMENT nev (#PCDATA) >
+        <!ELEMENT szak (#PCDATA) >
+        <!ELEMENT osztaly (#PCDATA) >
+        ]>

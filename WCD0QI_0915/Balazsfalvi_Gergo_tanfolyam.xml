@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<konferencia>
+    <cím>Sajo utca 22.</cím>
+    <hallgatók>
+        <hallgató id="1">
+            <név> Zoli</név>
+            <lakcím>Bundáskenyér utca 2.</lakcím>
+        </hallgató>
+        <hallgató id="2">
+            <név> Jani</név>
+            <lakcím>Bundáskenyér utca 3.</lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>Puskás Ferenc Aréna</helyszín>
+    <előadó>
+        <név>Dr. Kovács László</név>
+        <adószám>02397023</adószám>
+        <lakcím>Miskolc Traktor utca 3.</lakcím>
+    </előadó>
+    <dátum>2020.12.01. 20:00</dátum>
+</konferencia>
