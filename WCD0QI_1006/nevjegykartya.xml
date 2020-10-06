@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nevjegykartyak>
+    <nevjegykartya id="1">
+        <nev>Sandor Benedek</nev>
+        <ceg>
+            <cim>
+                <isz>3900</isz>
+                <varos>Szerencs</varos>
+                <utca>Arany János</utca>
+                <hsz>11</hsz>
+            </cim>
+            <nev>Borsodviz ZRT</nev>
+            <telefonszam>
+                <korzet>46</korzet>
+                474741
+            </telefonszam>
+            <weblap>bw.hu</weblap>
+        </ceg>
+        <beosztas>Takarító</beosztas>
+        <telefonszám>
+            <körzet>47</körzet>
+            3552343
+        </telefonszám>
+        <email>sanyi@a.hu</email>
+    </nevjegykartya>
+    <nevjegykartya id="2">
+        <nev>Sandor Zoltan</nev>
+        <ceg>
+            <cim>
+                <isz>3900</isz>
+                <varos>Szerencs</varos>
+                <utca>Arany János</utca>
+                <hsz>12</hsz>
+            </cim>
+            <nev>Arenim Technologies</nev>
+            <telefonszam>
+                <korzet>46</korzet>
+                474742
+            </telefonszam>
+            <weblap>arenim.hu</weblap>
+        </ceg>
+        <beosztas>Fejlesztő</beosztas>
+        <telefonszám>
+            <körzet>47</körzet>
+            3552343
+        </telefonszám>
+        <email>sanyi@b.hu</email>
+    </nevjegykartya>
+</nevjegykartyak>

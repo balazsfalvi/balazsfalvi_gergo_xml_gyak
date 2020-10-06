@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ember">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="nev"/>
+                <xs:element type="xs:int" name="fizetes"/>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
