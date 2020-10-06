@@ -14,7 +14,7 @@
             <xs:element name="telefonszam" type="telefonszam"/>
             <xs:element name="email" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute type="xs:byte" name="id"/>
+        <xs:attribute type="xs:byte" name="id" use="required"/>
     </xs:complexType>
     <xs:complexType name="ceg">
         <xs:sequence>
