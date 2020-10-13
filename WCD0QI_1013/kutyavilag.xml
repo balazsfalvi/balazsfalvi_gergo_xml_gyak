@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<konyv isbn="08362333">
+    <cim>Kutyavilag</cim>
+    <szerzo>Charles M. Schulz</szerzo>
+    <szereplo>
+        <nev>Snoopy</nev>
+        <baratja>Peppermint</baratja>
+        <szuletett>1950-10-04</szuletett>
+        <jellemzes>buta</jellemzes>
+    </szereplo>
+    <szereplo>
+        <nev>Peppermint Patty</nev>
+        <szuletett>1966-10-04</szuletett>
+        <jellemzes>buta ő is</jellemzes>
+    </szereplo>
+</konyv>
