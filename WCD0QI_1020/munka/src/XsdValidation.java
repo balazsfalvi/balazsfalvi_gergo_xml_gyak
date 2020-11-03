@@ -35,8 +35,8 @@ public class XsdValidation {
         } catch (IOException e){
             System.out.println("Exception: "+e.getMessage());
             return false;
-        }catch(SAXException e1){
-            System.out.println("SAX Exception: "+e1.getMessage());
+        }catch(SAXException e2){
+            System.out.println("SAX Exception: "+e2.getMessage());
             return false;
         }
 

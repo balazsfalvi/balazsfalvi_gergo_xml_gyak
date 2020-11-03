@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<class>
+    <student rollno="393">
+        <firstname>B</firstname>
+        <lastname>Gergo</lastname>
+        <nickname>Bggegrggo</nickname>
+        <marks>81</marks>
+    </student>
+    <student rollno="493">
+        <firstname>Nagy</firstname>
+        <lastname>Zoli</lastname>
+        <nickname>NZ</nickname>
+        <marks>95</marks>
+    </student>
+    <student rollno="593">
+        <firstname>Siraly</firstname>
+        <lastname>Karoly</lastname>
+        <nickname>SK</nickname>
+        <marks>90</marks>
+    </student>
+</class>
