@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type = "text/xsl" href = "hallgatokWCD0QI.xsl"?>
+<osztaly>
+    <alkalmazott id="001">
+        <keresznev>Istvan</keresznev>
+        <vezeteknev>Arvai</vezeteknev>
+        <becenev>Arva</becenev>
+        <fizetes>60000</fizetes>
+    </alkalmazott>
+    <alkalmazott id="024">
+        <keresznev>Sara</keresznev>
+        <vezeteknev>Keszeg</vezeteknev>
+        <becenev>SK</becenev>
+        <fizetes>70000</fizetes>
+    </alkalmazott>
+    <alkalmazott id="056">
+        <keresznev>Gabor</keresznev>
+        <vezeteknev>Simon</vezeteknev>
+        <becenev>GS</becenev>
+        <fizetes>600000</fizetes>
+    </alkalmazott>
+</osztaly>
