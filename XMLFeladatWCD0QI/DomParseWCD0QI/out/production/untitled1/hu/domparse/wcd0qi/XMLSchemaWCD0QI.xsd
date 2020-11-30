@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="webshop" xmlns="webshop">
+    <xs:element name="webshop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="geprendeles" type="geprendelesType"/>
+                    <xs:element name="szamitogep" type="szamitogepType"/>
+                    <xs:element name="specifikacio" type="specifikacioType"/>
+                    <xs:element name="rendeles" type="rendelesType"/>
+                    <xs:element name="elado" type="eladoType"/>
+                    <xs:element name="vasarlo" type="vasarloType"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="geprendelesID_PK">
+            <xs:selector xpath="geprendeles"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="szamitogepID_PK">
+            <xs:selector xpath="szamitogep"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="specifikacioID_PK">
+            <xs:selector xpath="specifikacio"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="rendelesID_PK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="eladoID_PK">
+            <xs:selector xpath="elado"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="vasarloID_PK">
+            <xs:selector xpath="vasarlo"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:keyref name="szamitogepID_FK" refer="szamitogepID_PK">
+            <xs:selector xpath="geprendeles"/>
+            <xs:field xpath="@szamitogepId"/>
+        </xs:keyref>
+        <xs:keyref name="rendelesID_FK" refer="rendelesID_PK">
+            <xs:selector xpath="geprendeles"/>
+            <xs:field xpath="@rendelesId"/>
+        </xs:keyref>
+        <xs:keyref name="specID_FK" refer="specifikacioID_PK">
+            <xs:selector xpath="szamitogep"/>
+            <xs:field xpath="@specId"/>
+        </xs:keyref>
+        <xs:keyref name="eladoId_FK" refer="eladoID_PK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@eladoId"/>
+        </xs:keyref>
+        <xs:keyref name="vasarloId_FK" refer="vasarloID_PK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@vasarloId"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="telepulesType">
+        <xs:sequence>
+            <xs:element name="irsz" type="xs:unsignedShort" />
+            <xs:element name="varos" type="xs:string" />
+            <xs:element name="utca" type="xs:string" />
+            <xs:element name="hazszam" type="xs:unsignedByte" />
+            <xs:element name="emelet" type="xs:unsignedByte" />
+            <xs:element name="ajto" type="xs:unsignedByte" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="geprendelesType">
+        <xs:sequence>
+            <xs:element name="darab" type="xs:unsignedByte" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+        <xs:attribute name="szamitogepId" type="xs:unsignedByte" use="required" />
+        <xs:attribute name="rendelesId" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+    <xs:complexType name="szamitogepType">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:unsignedInt" />
+            <xs:element name="elnevezes" type="xs:string" />
+            <xs:element name="kategoria" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+        <xs:attribute name="specId" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+    <xs:complexType name="specifikacioType">
+        <xs:sequence>
+            <xs:element name="alaplap" type="xs:string" />
+            <xs:element name="videokartya" type="xs:string" />
+            <xs:element name="memoria" type="xs:string" />
+            <xs:element name="tapegyseg" type="xs:string" />
+            <xs:element name="processzor" type="xs:string" />
+            <xs:element name="tarhely" type="xs:string" />
+            <xs:element name="egyeb" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+    <xs:complexType name="rendelesType">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+        <xs:attribute name="eladoId" type="xs:unsignedByte" use="required" />
+        <xs:attribute name="vasarloId" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+    <xs:complexType name="eladoType">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string" />
+            <xs:element name="email" type="xs:string" />
+            <xs:element name="telszam" type="xs:long" />
+            <xs:element name="telepules" type="xs:string" />
+            <xs:element name="ertekeles" type="xs:unsignedByte" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+    <xs:complexType name="vasarloType">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string" />
+            <xs:element name="telefonszam" type="xs:long" />
+            <xs:element name="email" type="xs:string" />
+            <xs:element name="lackim" type="telepulesType">
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+</xs:schema>

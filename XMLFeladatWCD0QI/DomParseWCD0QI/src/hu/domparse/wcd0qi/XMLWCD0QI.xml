@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><webshop xmlns="webshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="webshop XMLSchemaWCD0QI.xsd">
+    <geprendeles id="1" rendelesId="1" szamitogepId="1">
+        <darab>2</darab>
+    </geprendeles>
+    <szamitogep id="1" specId="1">
+        <ar>75000</ar>
+        <elnevezes>Irodai</elnevezes>
+        <kategoria>alacsony</kategoria>
+    </szamitogep>
+    <specifikacio id="1">
+        <alaplap>ASUS T4104F</alaplap>
+        <videokartya>AMD 8GB</videokartya>
+        <memoria>4GB Viper X</memoria>
+        <tapegyseg>400W</tapegyseg>
+        <processzor>Intel Core i3 3900F</processzor>
+        <tarhely>200GB Kingstone HDD</tarhely>
+        <egyeb>CD író/olvasó</egyeb>
+    </specifikacio>
+    <rendeles eladoId="1" id="1" vasarloId="1">
+        <datum>2014.01.12</datum>
+    </rendeles>
+    <elado id="1">
+        <nev>Kocsis Sándor</nev>
+        <email>kocsis@sandor.hu</email>
+        <telszam>+36702552432</telszam>
+        <telepules>Szeged</telepules>
+        <ertekeles>5</ertekeles>
+    </elado>
+    <vasarlo id="1">
+        <nev>Varga Bela</nev>
+        <telefonszam>+3652412414</telefonszam>
+        <email>bela@varga.hu</email>
+        <lackim>
+            <irsz>4200</irsz>
+            <varos>Szeged</varos>
+            <utca>Arany Janos</utca>
+            <hazszam>10</hazszam>
+            <emelet>1</emelet>
+            <ajto>3</ajto>
+        </lackim>
+    </vasarlo>
+    <geprendeles id="2" rendelesId="2" szamitogepId="2">
+        <darab>4</darab>
+    </geprendeles>
+    <szamitogep id="2" specId="2">
+        <ar>500000</ar>
+        <elnevezes>Gamer</elnevezes>
+        <kategoria>csúcs</kategoria>
+    </szamitogep>
+    <specifikacio id="2">
+        <alaplap>ASUS T9104F</alaplap>
+        <videokartya>AMD 16GB</videokartya>
+        <memoria>32GB Viper X</memoria>
+        <tapegyseg>600W</tapegyseg>
+        <processzor>Intel Core i9 9400F</processzor>
+        <tarhely>2TB Kingstone SSD</tarhely>
+        <egyeb>CD író/olvasó, processzor vízhűtő</egyeb>
+    </specifikacio>
+    <rendeles eladoId="1" id="2" vasarloId="1">
+        <datum>2015.01.12</datum>
+    </rendeles>
+    <elado id="2">
+        <nev>Kocsis Sándorkakas</nev>
+        <email>kocsis@sandor.hu</email>
+        <telszam>+36702552432</telszam>
+        <telepules>Miskolc</telepules>
+        <ertekeles>4</ertekeles>
+    </elado>
+    <vasarlo id="2">
+        <nev>Varga Andras</nev>
+        <telefonszam>+3652412414</telefonszam>
+        <email>andras@varga.hu</email>
+        <lackim>
+            <irsz>3900</irsz>
+            <varos>Szerencs</varos>
+            <utca>Kovacs Janos</utca>
+            <hazszam>50</hazszam>
+            <emelet>11</emelet>
+            <ajto>23</ajto>
+        </lackim>
+    </vasarlo>
+</webshop>
