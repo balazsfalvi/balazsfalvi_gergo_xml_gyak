@@ -2,6 +2,9 @@
     <geprendeles id="1" rendelesId="1" szamitogepId="1">
         <darab>2</darab>
     </geprendeles>
+    <geprendeles id="1" rendelesId="2" szamitogepId="1">
+        <darab>100</darab>
+    </geprendeles>
     <szamitogep id="1" specId="1">
         <ar>75000</ar>
         <elnevezes>Irodai</elnevezes>
