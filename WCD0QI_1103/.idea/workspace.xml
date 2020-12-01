@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e68d94ac-1815-44a7-878b-8f36fb8711c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../WCD0QI_1020/munka/src/XsdValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WCD0QI_1020/munka/src/XsdValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +13,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1jmaF4FXpCWn9AAOX36OV00U06l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/domwcd0qi" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -32,6 +36,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604411613756</updated>
       <workItem from="1604411615088" duration="131000" />
+      <workItem from="1606070619334" duration="186000" />
     </task>
     <servers />
   </component>
@@ -51,10 +61,19 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604411718527">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606070638870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.67.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1606070638870" />
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606070637994">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.67.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1606070637994" />
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1606070803614">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604411718527" />
+    <state x="686" y="211" key="FileChooserDialogImpl/1920.67.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1606070803614" />
     <state x="209" y="33" key="new project wizard" timestamp="1604411745311">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

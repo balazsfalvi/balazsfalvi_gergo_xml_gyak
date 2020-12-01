@@ -2,13 +2,11 @@
     <geprendeles id="1" rendelesId="1" szamitogepId="1">
         <darab>2</darab>
     </geprendeles>
-    <geprendeles id="1" rendelesId="2" szamitogepId="1">
-        <darab>100</darab>
-    </geprendeles>
+
     <szamitogep id="1" specId="1">
-        <ar>75000</ar>
+        <ar>66000</ar>
         <elnevezes>Irodai</elnevezes>
-        <kategoria>alacsony</kategoria>
+        <kategoria>Alacsony</kategoria>
     </szamitogep>
     <specifikacio id="1">
         <alaplap>ASUS T4104F</alaplap>
@@ -43,20 +41,20 @@
         </lackim>
     </vasarlo>
     <geprendeles id="2" rendelesId="2" szamitogepId="2">
-        <darab>4</darab>
+        <darab>6</darab>
     </geprendeles>
     <szamitogep id="2" specId="2">
-        <ar>500000</ar>
-        <elnevezes>Gamer</elnevezes>
+        <ar>1000000</ar>
+        <elnevezes>csúcs</elnevezes>
         <kategoria>csúcs</kategoria>
     </szamitogep>
     <specifikacio id="2">
-        <alaplap>ASUS T9104F</alaplap>
+        <alaplap>ASUS T1905F</alaplap>
         <videokartya>AMD 16GB</videokartya>
-        <memoria>32GB Viper X</memoria>
-        <tapegyseg>600W</tapegyseg>
-        <processzor>Intel Core i9 9400F</processzor>
-        <tarhely>2TB Kingstone SSD</tarhely>
+        <memoria>32 Viper XX</memoria>
+        <tapegyseg>500W</tapegyseg>
+        <processzor>Intel Core i9 9600F</processzor>
+        <tarhely>3TB Kingstone SSD</tarhely>
         <egyeb>CD író/olvasó, processzor vízhűtő</egyeb>
     </specifikacio>
     <rendeles eladoId="1" id="2" vasarloId="1">
@@ -82,4 +80,23 @@
             <ajto>23</ajto>
         </lackim>
     </vasarlo>
+    <vasarlo id="3">
+        <nev>Kiss Piroska</nev>
+        <telefonszam>+35350540235</telefonszam>
+        <email>kiss@piroska.hu</email>
+        <lackim>
+            <irsz>4500</irsz>
+            <varos>Szombathely</varos>
+            <utca>Petőfi Sándor</utca>
+            <hazszam>45</hazszam>
+            <emelet>2</emelet>
+            <ajto>3</ajto>
+        </lackim>
+    </vasarlo>
+    <rendeles eladoId="1" id="3" vasarloId="3">
+        <datum>2014.01.12</datum>
+    </rendeles>
+    <geprendeles id="3" rendelesId="3" szamitogepId="1">
+        <darab>34</darab>
+    </geprendeles>
 </webshop>

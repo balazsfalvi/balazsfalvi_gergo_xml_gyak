@@ -26,11 +26,12 @@ public class DOMModifyWCD0QI {
         DocumentBuilder dBuilder = factory.newDocumentBuilder();
         Document doc = dBuilder.parse(xmlFile);
         doc.getDocumentElement().normalize();
-        int rendelesekSzama = doc.getElementsByTagName("geprendeles").getLength(); //rendelések számának lekérdezése
+
+
         System.out.println("XML Módosítása");
         System.out.println("Adja meg mit szeretne módosítani: ");
         System.out.println("1 Specifikacio adatok módosítása\n2 Szamitogep alap adatok módosítása\n3 Geprendelés darabszámának módosítása\n4 Vasarlo adatainak módosítása");
-        Modify(doc, rendelesekSzama);
+        Modify(doc);
 
     }
 
@@ -42,23 +43,27 @@ public class DOMModifyWCD0QI {
         transformer.transform(source, result);
     }
     //Modify-ban a felhasználót megkérdezzük, hogy a rendelés mely adatát kívánja módosítani
-    public static void Modify(Document doc, int rendelesszam) throws TransformerException {
+    public static void Modify(Document doc) throws TransformerException {
+        int rendelesekSzama = doc.getElementsByTagName("geprendeles").getLength(); //geprendelesek számának lekérdezése
+        int gepekSzama = doc.getElementsByTagName("szamitogep").getLength(); //szamitogepek számának lekérdezése
+        int vasarlokSzama = doc.getElementsByTagName("vasarlo").getLength(); //vasarlok számának lekérdezése
+        int specifikaciokSzama = doc.getElementsByTagName("specifikacio").getLength(); //specifikacio számának lekérdezése
         Scanner scan = new Scanner(System.in);
         System.out.println("Adja meg a sorszamot: ");
         int readCategory = scan.nextInt();
 
         switch (readCategory) {
             case 1:
-                ModifySpecification(doc, rendelesszam);
+                ModifySpecification(doc, specifikaciokSzama);
                 break;
             case 2:
-                ModifySzamitogep(doc, rendelesszam);
+                ModifySzamitogep(doc, gepekSzama);
                 break;
             case 3:
-                Geprendeles(doc, rendelesszam);
+                Geprendeles(doc, rendelesekSzama);
                 break;
             case 4:
-                ModifyVasarlo(doc, rendelesszam);
+                ModifyVasarlo(doc, vasarlokSzama);
                 break;
 
         }
@@ -67,7 +72,7 @@ public class DOMModifyWCD0QI {
     private static void ModifyVasarlo(Document doc, int rendelesszam) throws TransformerException {
         //Kiiratjuk a jelenlegi vásárlókat, majd lekérdezzük melyiket kívánja módosítani.
         System.out.println("Melyik vásárló adatait szeretné módosítani?");
-        for (int i = 0; i <= rendelesszam; i++) {
+        for (int i = 1; i < rendelesszam+1; i++) {
             System.out.println(i + ". vásárló");
             DOMReadWCD0QI.ReadVasarloById(doc, String.valueOf(i));
             System.out.println("-------------------------------------------");
@@ -140,7 +145,7 @@ public class DOMModifyWCD0QI {
         String id = ReadId();
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Darabszám");
+        System.out.print("Darabszám: ");
         String db = sc.nextLine();
 
 
@@ -165,7 +170,7 @@ public class DOMModifyWCD0QI {
 
     private static void ModifySzamitogep(Document doc, int rendelesszam) throws TransformerException {
         System.out.println("Melyik számítógépet szeretné módosítani?");
-        for (int i = 0; i <= rendelesszam; i++) {
+        for (int i = 1; i < rendelesszam+1; i++) {
             System.out.println(i + ". számítógép");
             DOMReadWCD0QI.ReadSzamitogepById(doc, String.valueOf(i));
             System.out.println("-------------------------------------------");
@@ -182,7 +187,7 @@ public class DOMModifyWCD0QI {
 
 
         NodeList nodeList = doc.getElementsByTagName("szamitogep");
-        for (int i = 0; i < nodeList.getLength(); i++) {
+        for (int i = 0; i < rendelesszam; i++) {
             Node nNode = nodeList.item(i);
 
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
