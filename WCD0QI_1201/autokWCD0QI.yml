@@ -1,0 +1,24 @@
+---
+autok:
+  auto:
+  - "-rsz": ABC-100
+    tipus: " Fiat "
+    ar: " 21233 "
+    szin: " piros "
+    tulaj:
+      nev: Kinga
+      varos: Eger
+  - "-rsz": ABC-101
+    tipus: " Skoda "
+    ar: " 44233 "
+    szin: " fehér "
+    tulaj:
+      nev: Jani
+      varos: Miskolc
+  - "-rsz": ABC-102
+    tipus: " Opel "
+    ar: " 31233 "
+    szin: " szürke "
+    tulaj:
+      nev: Tomi
+      varos: Miskolc

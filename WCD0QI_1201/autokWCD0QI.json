@@ -1,0 +1,36 @@
+{
+  "autok": {
+    "auto": [
+      {
+        "_rsz": "ABC-100",
+        "tipus": " Fiat ",
+        "ar": " 212332 ",
+        "szin": " kek ",
+        "tulaj": {
+          "nev": "Barna",
+          "varos": "Eger"
+        }
+      },
+      {
+        "_rsz": "ABC-101",
+        "tipus": " Skoda ",
+        "ar": " 44233 ",
+        "szin": " kék ",
+        "tulaj": {
+          "nev": "Peti",
+          "varos": "Miskolc"
+        }
+      },
+      {
+        "_rsz": "ABC-102",
+        "tipus": " Opel ",
+        "ar": " 31233 ",
+        "szin": " szürke ",
+        "tulaj": {
+          "nev": "Sanyi",
+          "varos": "Miskolc"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Create Object from JSON String</h2>
+
+    <p id="demo"></p>
+
+    <script>
+
+        var employee = JSON.parse('{ "nev":"Sara", "kor":22, "city":"6000"}');
+        document.getElementById("demo").innerHTML = employee.nev + " " + employee.kor + " " + employee.city;
+    </script>
+
+</body>
+
+</html>
